@@ -1,6 +1,6 @@
 @font-face {
   font-family: Norse Bold;
-  src: url(Norse-Bold.otf);
+  src: url(assets/Norse-Bold.otf);
 }
 
 body {
@@ -24,21 +24,15 @@ main > *
   margin-right: 40px;
 }
 
-main > h3 {
+h3 {
   max-width: 650px;
 }
 
-main > form {
+form {
   background-color: white;
   /* This feels really hacky. There has to be a better way */
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  padding-left: 40px; 
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin: 50px 0 20px 0;
+  padding: 10px 40px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
@@ -48,9 +42,15 @@ fieldset {
   padding: 0;
   max-width: 700px;
   border: 0;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+legend {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .form-row {
@@ -63,9 +63,12 @@ fieldset {
   flex-direction: column;
 }
 
-legend {
-  font-size: 24px;
-  margin-bottom: 20px;
+label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #757575;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 input {
@@ -84,12 +87,26 @@ input:invalid {
   outline: 1px solid red;
 }
 
-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #757575;
+button {
+  background-color: #596D48;
+  box-shadow: none;
+  border: 0;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 10px;
+  font-size: 16px;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-paragraph {
+  font-size: 16px;
+}
+
+.form-paragraph a:link {
+  color: #60724F;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #side-logo {
@@ -97,7 +114,7 @@ label {
   flex-direction: column;
   
   margin: 0;
-  background-image: url(img/photo-1585202900225-6d3ac20a6962.webp);
+  background-image: url(assets/img/photo-1585202900225-6d3ac20a6962.webp);
   background-size: cover;
 }
 
@@ -108,16 +125,16 @@ figcaption {
   opacity: 75%;
 }
 
-figcaption p {
+.credit-text {
   font-size: 12px;
 }
 
-figcaption p a:link {
+.credit-text a:link {
   color: white;
   text-decoration: underline;
 }
 
-figcaption p a:visited {
+.credit-text a:visited {
   color: white;
   text-decoration: underline;
 }
@@ -144,25 +161,4 @@ figcaption p a:visited {
 
 #overlay img {
   height: 90%;
-}
-
-p {
-  font-size: 16px;
-}
-p a:link {
-  color: #60724F;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-button {
-  background-color: #596D48;
-  box-shadow: none;
-  border: 0;
-  color: white;
-  padding: 15px 60px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
