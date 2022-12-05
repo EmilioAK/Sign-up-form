@@ -73,14 +73,13 @@ input {
   border-radius: 5px;
 }
 
-/* input[type="text" i]:focus {
-  border: 1px solid #587AE2;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-} */
-
 input:focus {
-  background-color: lightblue;
-  border: 1px solid wheat;
+  outline: 1px solid #718AD6;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input:invalid {
+  outline: 1px solid red;
 }
 
 label {
