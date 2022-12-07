@@ -12,16 +12,12 @@ body {
 }
 
 main {
+  --main-side-padding: 40px;
+  padding-left: var(--main-side-padding);
   font-size: 18px;
   padding-top: 150px;
   background-color: #F7F8FA;
   color: #424242;
-}
-
-main > *
-{
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 h3 {
@@ -30,8 +26,7 @@ h3 {
 
 form {
   background-color: white;
-  /* This feels really hacky. There has to be a better way */
-  margin: 50px 0 20px 0;
+  margin: 50px 0 20px calc( var(--main-side-padding) * -1 );
   padding: 10px 40px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
